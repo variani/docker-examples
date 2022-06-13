@@ -22,9 +22,15 @@ Functional blocks:
 - parse arguments inside the R script;
 - install required R packages.
 
-|--|--|--|
-| [hello_r:1.0](hello-r/01-hello-r-v1.0/) | `docker run hello_r:1.0 Andrey` | `base::commandArgs` |
-| [hello_r:1.1](hello-r/02-hello-r-v1.1/) | `docker run hello_r:1.1 --name Andrey --times 2` | `docopt::docopt` |
+[hello_r:1.0](hello-r/01-hello-r-v1.0/) 
+
+- `docker run hello_r:1.0 Andrey` 
+- `base::commandArgs` 
+
+[hello_r:1.1](hello-r/02-hello-r-v1.1/) 
+
+- `docker run hello_r:1.1 --name Andrey --times 2` 
+- `docopt::docopt` 
 
 
 ## References
