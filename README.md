@@ -1,8 +1,17 @@
 # Docker examples
 
-# Notes
+## Examples of Docker images
 
-## Image name convention
+Regenie
+
+- Dockerfile: https://github.com/rgcgithub/regenie/blob/master/Dockerfile
+- bash script to test the docker with mounting a directory with test data: https://github.com/rgcgithub/regenie/blob/master/test/test_docker.sh
+  - example command to get the Regenie version: `docker run -v ${REGENIE_PATH}:${mntpt} --rm $DOCKER_IMAGE regenie --version` 
+
+
+## Notes
+
+### Docker image name convention
 
 https://awstip.com/docker-image-name-convention-951e84dc0a42
 
