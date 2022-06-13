@@ -1,12 +1,33 @@
 # Docker examples
 
-| App | Docker run | Argument parser in R |
+## App: Hello from R
+
+"Hello world!" app based on an R script. 
+There several versions of the app: every next version of the app. adds some new functionality.
+The basic version supposed to do something like this.
+
+```bash
+# no arguments 
+> docker run hello
+Hello, Guest!
+# argument #1 = person name
+> docker run hello Andrey
+Hello, Andrey!
+```
+
+Functional blocks:
+
+- call the R script from Docker;
+- pass arguments from Docker to the R script;
+- parse arguments inside the R script;
+- install required R packages.
+
 |--|--|--|
 | [hello_r:1.0](hello-r/01-hello-r-v1.0/) | `docker run hello_r:1.0 Andrey` | `base::commandArgs` |
 | [hello_r:1.1](hello-r/02-hello-r-v1.1/) | `docker run hello_r:1.1 --name Andrey --times 2` | `docopt::docopt` |
 
 
-References
+## References
 
 - I/O: https://stackoverflow.com/a/50354649
 - WORKDIR command in Dockerfile: https://www.educative.io/edpresso/what-is-the-workdir-command-in-docker
