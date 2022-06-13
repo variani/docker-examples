@@ -11,6 +11,10 @@ Regenie
 
 ## Notes
 
+### I/O
+
+https://stackoverflow.com/a/50354649
+
 ### Docker image name convention
 
 https://awstip.com/docker-image-name-convention-951e84dc0a42
