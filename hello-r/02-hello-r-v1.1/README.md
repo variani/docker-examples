@@ -3,14 +3,10 @@
 A new version 1.1 extends 1.0 with a new argument parser in R 
 via the R package [docopt](https://github.com/docopt/docopt.R).
 
+We have new features with `docopt`:
 
-Here are examples of output messages we wish our docker to print 
-(`hello_r:1.0` is the name of our Docker image).
-
-We have new featurs with `docopt`.
-
-- Named arguments.
-- Printing a help message.
+- Named arguments;
+- Printing a help message;
 - Having optional arguments, e.g., `--name`.
 
 Another update is related to installation of R packages.
@@ -41,7 +37,7 @@ docker build -t hello_r:1.1 .
 Run the Docker image (to say hello):
 
 ```bash
-docker run --rm hello_r:1.1 Andrey
+docker run --rm hello_r:1.1 --name Andrey
 ```
 
 Example of output:
