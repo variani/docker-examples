@@ -1,5 +1,29 @@
 # Docker examples
 
+| App | Docker run | Argument parser in R |
+|--|--|--|
+| [hello_r:1.0](hello-r/01-hello-r-v1.0/) | `docker run hello_r:1.0 Andrey` | `base::commandArgs` |
+| [hello_r:1.1](hello-r/02-hello-r-v1.1/) | `docker run hello_r:1.1 --name Andrey --times 2` | `docopt::docopt` |
+
+
+References
+
+- I/O: https://stackoverflow.com/a/50354649
+- WORKDIR command in Dockerfile: https://www.educative.io/edpresso/what-is-the-workdir-command-in-docker
+- ENTRYPOINT vs. CMD commands in Dockerfile: https://devopscube.com/run-scripts-docker-arguments/
+
+
+## Docker arguments
+
+**--rm**: to tell the Docker Daemon to clean up the container and remove the file system after the container exits. 
+This helps you save disk space, for example, after running short-lived containers.
+
+
+**-t** (**--tty**): to tell Docker to allocate a virtual terminal session within the container. 
+This is commonly used with the -i (or --interactive) option, which keeps STDIN open even if running in detached mode.
+
+This **-it** argument is used when one wants to type some commands on your container, e.g., within an R or python console.
+
 ## Examples of Docker images
 
 Regenie
@@ -9,11 +33,7 @@ Regenie
   - example command to get the Regenie version: `docker run -v ${REGENIE_PATH}:${mntpt} --rm $DOCKER_IMAGE regenie --version` 
 
 
-## Notes
-
-### I/O
-
-https://stackoverflow.com/a/50354649
+## Misc
 
 ### Docker image name convention
 
