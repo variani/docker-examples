@@ -3,7 +3,7 @@
 ## App: Hello from R
 
 "Hello world!" app based on an R script. 
-There several versions of the app: every next version of the app. adds some new functionality.
+There are several versions of the app: every next version adds some new functionality.
 The basic version supposed to do something like this.
 
 ```bash
@@ -25,12 +25,17 @@ Functional blocks:
 [hello_r:1.0](hello-r/01-hello-r-v1.0/) 
 
 - `docker run hello_r:1.0 Andrey` 
-- `base::commandArgs` 
+- arguments parsed by `base::commandArgs` in the R script
 
 [hello_r:1.1](hello-r/02-hello-r-v1.1/) 
 
 - `docker run hello_r:1.1 --name Andrey --times 2` 
-- `docopt::docopt` 
+- arguments parsed by `docopt::docopt` in the R script
+
+[hello_r:1.2](hello-r/03-hello-r-v1.2/) 
+
+- `docker run  -v ${PWD}/input_data:/app/input_data -v ${PWD}/results:/app/results hello_r:1.2 --dir_out results/run1`
+- files for I/O are supported
 
 
 ## References
