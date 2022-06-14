@@ -1,6 +1,6 @@
 ## About the app `hello_r:1.2`
 
-The app v1.2 mounts two directories, one to read (optinal) input data and another to write output data.
+The app v1.2 mounts two directories, one to read (optional) input data and another to write output data.
 
 ```bash
 > docker run --rm hello_r:1.2 -h
@@ -23,7 +23,7 @@ Options:
 
 - Names can be specified either via `--name` or `--file_name` arguments (can be unspecified too).
     - docopt coding: `[--name <name> | --file_name <file_name>]` with the `|` symbol.
-- The specificed output directory is checked. If it exists and the flag `--overwrite` is on, then the app overwrite the content in the output folder.
+- The specificed output directory is checked. If it exists and the flag `--overwrite` is on, then the app overwrites the content in the output folder.
 
 ## Files
 
