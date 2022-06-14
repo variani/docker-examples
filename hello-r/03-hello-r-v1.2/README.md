@@ -4,6 +4,20 @@
 ## Files
 
 ```bash
+> tree
+.
+├── Dockerfile
+├── README.md
+├── hello.R
+├── input_data
+│   └── names_input.txt
+└── results
+    ├── run1
+    │   └── names_output.txt
+    └── run2
+        └── names_output.txt
+
+4 directories, 6 files
 ```
 
 ## Commands
@@ -17,7 +31,12 @@ docker build -t hello_r:1.2 .
 Run the Docker image (to say hello):
 
 ```bash
- docker run --rm -v ${PWD}/input_data:/app/input_data -v ${PWD}/results:/app/results hello_r:1.2 --file_name input_data/names_input.txt --dir_out results/run1
+docker run --rm \
+  -v ${PWD}/input_data:/app/input_data \
+  -v ${PWD}/results:/app/results \
+  hello_r:1.2 \
+    --file_name input_data/names_input.txt \
+    --dir_out results/run1
 ```
 
 Example of output (no names specified):
