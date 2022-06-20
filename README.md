@@ -83,3 +83,8 @@ docker tag myimage-v1.9.1 myimage:latest
 - myimage:1 always points to the latest image in the 1 branch.
 - myimage:1.9 always points to the latest image in 1.9.x.
 - myimage:latest always points to the latest image of all versions.
+
+## Docker volumes
+
+- https://earthly.dev/blog/docker-volumes/#:~:text=Docker%20Volume%20Best%20Practices,-Now%20that%20you&text=Always%20mount%20volumes%20as%20read,name%20in%20a%20production%20environment.
+- https://towardsdatascience.com/the-complete-guide-to-docker-volumes-1a06051d2cce
