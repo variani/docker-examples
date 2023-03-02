@@ -88,3 +88,9 @@ docker tag myimage-v1.9.1 myimage:latest
 
 - https://earthly.dev/blog/docker-volumes/#:~:text=Docker%20Volume%20Best%20Practices,-Now%20that%20you&text=Always%20mount%20volumes%20as%20read,name%20in%20a%20production%20environment.
 - https://towardsdatascience.com/the-complete-guide-to-docker-volumes-1a06051d2cce
+
+## Caveats
+
+1. How to fix docker: Got permission denied while trying to connect to the Docker daemon socket
+
+https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
