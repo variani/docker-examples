@@ -65,6 +65,14 @@ Regenie
   - example command to get the Regenie version: `docker run -v ${REGENIE_PATH}:${mntpt} --rm $DOCKER_IMAGE regenie --version` 
 
 
+## Clean space
+
+https://stackoverflow.com/a/44785784
+
+```bash
+docker rmi -f $(docker images -aq)
+```
+
 ## Misc
 
 ### Docker image name convention
