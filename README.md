@@ -70,6 +70,10 @@ Regenie
 https://stackoverflow.com/a/44785784
 
 ```bash
+# delete all containers including its volumes 
+docker rm -vf $(docker ps -aq)
+
+# delete all the images
 docker rmi -f $(docker images -aq)
 ```
 
