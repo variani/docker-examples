@@ -73,9 +73,7 @@ https://stackoverflow.com/a/44785784
 docker rmi -f $(docker images -aq)
 ```
 
-## Misc
-
-### Docker image name convention
+## Docker image name convention
 
 https://awstip.com/docker-image-name-convention-951e84dc0a42
 
@@ -96,6 +94,15 @@ docker tag myimage-v1.9.1 myimage:latest
 
 - https://earthly.dev/blog/docker-volumes/#:~:text=Docker%20Volume%20Best%20Practices,-Now%20that%20you&text=Always%20mount%20volumes%20as%20read,name%20in%20a%20production%20environment.
 - https://towardsdatascience.com/the-complete-guide-to-docker-volumes-1a06051d2cce
+
+## Rscript
+
+https://stackoverflow.com/questions/62704558/how-to-get-rscript-to-run-through-docker
+
+```bash
+# first line of the entry point script
+#!/usr/bin/env Rscript
+```
 
 ## Caveats
 
