@@ -113,3 +113,6 @@ https://stackoverflow.com/questions/62704558/how-to-get-rscript-to-run-through-d
 1. How to fix docker: Got permission denied while trying to connect to the Docker daemon socket
 
 https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
+
+2. [How to Fix Docker’s No Space Left on Device Error](https://www.baeldung.com/linux/docker-fix-no-space-error)
+          
